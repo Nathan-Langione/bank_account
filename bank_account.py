@@ -23,7 +23,7 @@ class BankAccount():
         if self.account_balance > 0:
             print(self.account_balance)
             print(self.interest_rate)
-            self.account_balance += float(self.account_balance) * float(self.interest_rate)
+            self.account_balance += self.account_balance * self.interest_rate
         return self
 
 account01 = BankAccount(100, 0.20)
